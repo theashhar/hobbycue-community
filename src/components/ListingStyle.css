@@ -3,18 +3,36 @@
     --themeColor: #8064A2;
     --themeColor2: #0096C8;
 }
+.parentDiv {
+    display: flex;
+flex-direction: column;
+}
 .outerListingDiv {
-    height:80vh;
+    height:900px;
     min-height: 700px;
     /* background-color: #90bd93 ; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.outerListingDiv.own {
+    height:600px;
+    min-height: 500px;
+    background-color: #F7FDFF;
+}
+.outerListingDiv.testimony {
+    height:600px;
+    min-height: 500px;
+    /* background-color: #F7FDFF; */
+}
 .gridContainer {
     display: grid;
     padding: 100px;
     grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Spacing between boxes */
+}
+.gridContainer.own, .gridContainer.testimony  {
+    grid-template-columns: repeat(1, 1fr); /* Two columns */
     gap: 20px; /* Spacing between boxes */
 }
 .listCardDiv{
@@ -26,6 +44,15 @@
     border: 1px solid #CED4DA;
     height: 100%;
     width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    margin: 10px;
+}
+.listCardDiv.testimony {
+    padding: 42px;
+    border: none;
+    background-color:#F7F5F9 ;
+
     border-radius: 8px;
     margin: 10px;
 }

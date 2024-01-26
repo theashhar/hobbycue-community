@@ -4,9 +4,11 @@ import people from '../assets/people.svg';
 import place from '../assets/place.svg';
 import product from '../assets/product.svg';
 import program from '../assets/program.svg';
+import add from '../assets/add.svg';
+import quote from '../assets/quote.svg';
 
 export default function Listing() {
-  return (
+  return (<>
     <div className='outerListingDiv'>
         <div className="gridContainer">
             <ListingCard icon = {people}
@@ -27,9 +29,47 @@ export default function Listing() {
             btnText='Attend' />
         </div>
     </div>
+          <div className="outerListingDiv own">
+            <div className="gridContainer own">
+            <ListingCardOwn icon = {add}
+                title='Add your own'
+                text='Are you a teacher or expert?  Do you sell or rent out equipment, venue or event tickets?  Or, you know someone who should be on hobbycue?  Go ahead and Add your Own page'
+                btnText='new' />
+          </div>
+        </div>
+          <div className="outerListingDiv testimony">
+            <div className="gridContainer testimony">
+            <Testimony icon = {quote}
+                title='Testimonials'
+                text='In a fast growing and ever changing city like Bangalore, it sometimes becomes very difficult to find or connect with like minded people. Websites like hobbycue.com is a great service which helps me get in touch with, communicate, connect, and exchange ideas with other dancers. It also provides the extra benefit of finding products and services that I can avail, which I can be assured is going to be of great quality as it comes recommended by people of the hobbycue community. To have discussions, to get visibility, and to be able to safely explore various hobbies and activities in my city, all under one roof, is an excellent idea and I highly recommend it.'
+                btnText='new' />
+          </div>
+        </div>
+
+        </>
   )
 }
 
+const Testimony =({icon, title, text, btnText}) => {
+return (
+    <div className='listCardDiv testimony' >
+        <div className='imageTitle'><img src={icon} alt="HobbyCue Logo" className="listIcon" />
+        <span className='listTitle'>{title}</span></div>
+        <p>{text}</p>
+        <button className='listBtn'>{btnText}</button>
+    </div>
+)
+}
+const ListingCardOwn =({icon, title, text, btnText}) => {
+return (
+    <div className='listCardDiv' >
+        <div className='imageTitle'><img src={icon} alt="HobbyCue Logo" className="listIcon" />
+        <span className='listTitle'>{title}</span></div>
+        <p>{text}</p>
+        <button className='listBtn'>{btnText}</button>
+    </div>
+)
+}
 const ListingCard =({icon, title, text, btnText}) => {
 return (
     <div className='listCardDiv' >
