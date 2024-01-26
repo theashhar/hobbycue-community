@@ -1,0 +1,32 @@
+:root {
+    --themeColor: #8064A2;
+    --themeColor2: #0096C8;
+}
+/* h1 {
+    font-size: 36;
+} */
+
+.outerHeroDiv {
+    height:100vh;
+    background-color: #F7F5F9 ;
+    display: flex;
+    justify-content: center;
+    z-index: -1
+}
+.outerHeroDiv h1 {
+    font-style: italic;
+}
+.outerHeroDiv span {
+color: var(--themeColor2);
+}
+.outerHeroDiv span.passion {
+color: var(--themeColor);
+}
+.leftHeroDiv {
+    width:60%;
+    padding:100px 50px 0 100px;
+}
+.rightHeroDiv {
+    width:40%;
+    padding:20px
+}

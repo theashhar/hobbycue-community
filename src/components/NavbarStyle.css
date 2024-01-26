@@ -1,0 +1,59 @@
+ /* bootstrap */
+ :root {
+    --themeColor: #8064A2;
+}
+.navbarDiv {
+ background-color: white;
+ box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.08);
+
+}
+.navContainer {
+    display:flex;
+    justify-content: space-between;
+    margin:0px;
+    width:100%;
+}
+
+.dropdown{
+display: flex;
+
+}
+.searchInput {
+    border-width: 1px;
+    border-color: rgb(206, 206, 206);
+    height: 40px;
+    border-radius: 8px 0px 0px 8px;
+    border: 1px solid var(--Grey-Lighter, #EBEDF0);
+    background: var(--Grey-Hover, #F8F9FA);
+}
+.searchInput::placeholder {
+    color: #939CA3;
+    /* font-family: "Poppins"; */
+    font-size: 12px;
+    font-weight: 300;
+    padding-left: 12px;
+
+  }
+.navbarLogo {
+    /* height: 50px; */
+    margin-right: 20px;
+}
+.searchButton{
+    width: 40px;
+height: 40px;
+flex-shrink: 0;
+border: 1px solid var(--Grey-Lighter, #EBEDF0);
+border-radius: 0px 8px 8px 0px;
+background: var(--themeColor);
+}
+.dropdown {
+    display: flex;
+    align-items: center;
+    /* margin: 10px; */
+}
+@media only screen and (max-width: 700px){
+    .navbarLogo {
+        height: 40px;
+        margin-right: 20px;
+    }
+}
