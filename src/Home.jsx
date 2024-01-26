@@ -3,6 +3,7 @@ import NavbarComp from './components/NavbarComp'
 import Navbar from './components/Navbar'
 import HeroSection from './components/HeroSection'
 import Footer from './components/Footer'
+import Listing from './components/Listing'
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Navbar />
       {/* <NavbarComp /> */}
       <HeroSection />
+      <Listing />
       <Footer />
     </div>
   )

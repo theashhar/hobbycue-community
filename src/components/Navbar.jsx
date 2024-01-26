@@ -7,7 +7,6 @@ import { MdStars } from "react-icons/md";
 import { IoIosArrowDown } from "react-icons/io";
 import { FaBookmark, FaBell } from "react-icons/fa6";
 // import { FaBell } from "react-icons/fa6";
-
 import { BsFillCartFill } from "react-icons/bs";
 
 export default function Navbar() {

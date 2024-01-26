@@ -1,0 +1,55 @@
+
+:root {
+    --themeColor: #8064A2;
+    --themeColor2: #0096C8;
+}
+.outerListingDiv {
+    height:80vh;
+    min-height: 700px;
+    /* background-color: #90bd93 ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gridContainer {
+    display: grid;
+    padding: 100px;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Spacing between boxes */
+}
+.listCardDiv{
+    display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    padding: 42px;
+    border: 1px solid #CED4DA;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    margin: 10px;
+}
+.listTitle {
+    font-size: 24px;
+    font-weight: 700;
+}
+.listBtn {
+    display: inline-flex;
+padding: 12px 31px 12px 30px;
+justify-content: center;
+align-items: center;
+border-radius: 8px;
+border: 1px solid var(--Primary-Full, #8064A2);
+background: var(--Grey-white, #FFF);
+margin: 20px 0;
+
+}
+.listIcon {
+    margin-right: 30px;
+}
+.imageTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
