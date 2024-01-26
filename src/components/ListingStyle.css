@@ -80,3 +80,46 @@ margin: 20px 0;
     align-items: center;
     margin: 20px 0;
 }
+/* AudioComponent.css */
+
+.audio-container {
+    background-color: #d1c8de;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:60%;
+    border-radius: 8px;
+  }
+  
+  .audio-player {
+    width: 80%;
+    min-width: 200px;
+    cursor: pointer;
+    background-color: #d1c8de; 
+    color: #8064a2;
+  }
+  
+  .circular-image {
+    border-radius: 50%;
+    margin-left: 20px; /* Adjust the margin as needed */
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+  }
+  .circular-image.big {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+  }
+  .testimonyDetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .nameDetails {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
